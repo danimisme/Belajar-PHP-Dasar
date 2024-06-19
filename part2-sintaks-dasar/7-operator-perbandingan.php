@@ -18,4 +18,11 @@ var_dump($a == $b);
 echo "<br> $a != $b = ";
 var_dump($a != $b);
 
+//identitas 
+// === , !==
+echo "<br> $a === $b = ";
+var_dump($a === $b);
+echo "<br> $a !== $b = ";
+var_dump($a !== $b);
+
 ?>
