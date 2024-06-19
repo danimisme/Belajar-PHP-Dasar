@@ -11,6 +11,9 @@ komentar lebih dari satu baris
 // echo, print
 echo "Muhammad Subhan Ramdhani";
 print "PHP dasar - Part 2";
+echo 24;
+echo true; // output : 1
+echo false; //output kosong
 // print_r
 print_r("Cetak menggunakan Print_R");
 // var_dump (memberikan informasi tipe data dan ukuran, biasa digunakan untuk debagging)
