@@ -5,6 +5,11 @@ for( $i=0; $i < 5; $i++ ) {
 }
 
 
-
+//Pengulangan While
+$i = 0;
+while($i < 5){
+    echo "Pengulangan While <br>";
+    $i++;
+}
 
 ?>
