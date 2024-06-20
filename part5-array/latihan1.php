@@ -21,4 +21,13 @@ echo "<br>";
 //print_r()
 print_r($bulan);
 
+
+echo "<br>";
+echo "<br>";
+
+//Menampilkan 1 ekemen pada array
+echo $hari[0];
+echo "<br>";
+echo $bulan[1];
+
 ?>
