@@ -1,3 +1,16 @@
+<?php
+if (!isset($_GET["nama"]) ||
+    !isset($_GET["nrp"]) ||
+    !isset($_GET["email"]) ||
+    !isset($_GET["jurusan"]) ||
+    !isset($_GET["gambar"])) {
+    // redirect
+    header("Location: 1-daftar-mahasiswa.php");
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
