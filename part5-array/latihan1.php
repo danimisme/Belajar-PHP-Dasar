@@ -7,7 +7,9 @@
 //cara lama
 $hari = array("Senin","Selasa","Rabu","Kamis","Jum'at","Sabtu","Minggu");
 
-
+//cara baru
+$buan = ["Januari","Febuari","Maret","April"];
+$arr1 = [123, "tulisan",fase];
 
 
 ?>
