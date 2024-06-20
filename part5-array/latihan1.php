@@ -8,8 +8,17 @@
 $hari = array("Senin","Selasa","Rabu","Kamis","Jum'at","Sabtu","Minggu");
 
 //cara baru
-$buan = ["Januari","Febuari","Maret","April"];
-$arr1 = [123, "tulisan",fase];
+$bulan = ["Januari","Febuari","Maret","April"];
+$arr1 = [123, "tulisan",false];
 
+//menampilkan array
+//var_dump()
+var_dump($hari);
+
+echo "<br>";
+echo "<br>";
+
+//print_r()
+print_r($bulan);
 
 ?>
