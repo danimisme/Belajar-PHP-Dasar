@@ -30,4 +30,11 @@ echo $hari[0];
 echo "<br>";
 echo $bulan[1];
 
+echo "<br>";
+echo "<br>";
+//Menambahkan elemen baru pada array
+$bulan[] = "Mei";
+$bulan[] = "Juni";
+print_r($bulan);
+
 ?>
