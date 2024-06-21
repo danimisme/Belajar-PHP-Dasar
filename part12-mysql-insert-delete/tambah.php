@@ -13,6 +13,15 @@ if (isset($_POST["submit"])) {
     // query insert data
     $query = "INSERT INTO mahasiswa VALUES ('', '$nrp' , '$nama' , '$email' , '$jurusan', '$gambar')";
     mysqli_query($conn,$query);
+
+    //cek apakah data berhasil di input atau tidak
+    if (mysqli_affected_rows($conn) > 0){
+        echo "berhasil";
+    } else {
+        echo "gagal !";
+        echo "<br>";
+        echo mysqli_error($conn);
+    }
 }
 
 ?>
