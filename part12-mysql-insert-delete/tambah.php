@@ -1,27 +1,22 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','phpdasar');
+require 'functions.php';
 
 if (isset($_POST["submit"])) {
-    //ambil data dari form
-    $nrp = $_POST["nrp"];
-    $nama = $_POST["nama"];
-    $email = $_POST["email"];
-    $jurusan = $_POST["jurusan"];
-    $gambar = $_POST["gambar"];
-
-    // query insert data
-    $query = "INSERT INTO mahasiswa VALUES ('', '$nrp' , '$nama' , '$email' , '$jurusan', '$gambar')";
-    mysqli_query($conn,$query);
-
-    //cek apakah data berhasil di input atau tidak
-    if (mysqli_affected_rows($conn) > 0){
-        echo "berhasil";
+    // cek apakah data berhasil ditambahkan
+    if (tambah($_POST) >0) {
+            echo "
+            <script>
+                alert('data berhasil ditambahkan');
+                document.location.href = 'index.php';
+            </script>
+            ";
     } else {
-        echo "gagal !";
-        echo "<br>";
-        echo mysqli_error($conn);
+        echo "
+        alert('data gagal ditambahkan');
+        ";
     }
+
 }
 
 ?>
