@@ -68,9 +68,15 @@ function upload() {
         </script>
         ";
     }
+
+    //generate nama baru
+    $namaFileBaru = uniqid();
+    $namaFileBaru .= ".";
+    $namaFileBaru .= $ekstensiGambar;
+
     //jika lolos pegecekan, gambar siap di upload
-    move_uploaded_file($tmpName, 'img/' . $namaFile);
-    return $namaFile;
+    move_uploaded_file($tmpName, 'img/' . $namaFileBaru);
+    return $namaFileBaru;
 
 
 }
