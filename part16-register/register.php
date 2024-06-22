@@ -1,3 +1,23 @@
+<?php
+require 'functions.php';
+
+if(isset($_POST["register"])){
+    if(register($_POST) > 0){
+        echo "
+        <script>
+        alert('Registrasi Berhasil !');
+        </script>
+        ";
+    } else {
+        echo mysqli_error($conn);
+    }
+
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +47,7 @@
                 <input type="password" name="password2" id="password2" >
             </li>
             <li>
-                <button type="submit" name="submit">Daftar</button>
+                <button type="submit" name="register">Daftar</button>
             </li>
         </ul>
     </form>
