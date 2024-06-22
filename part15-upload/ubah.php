@@ -37,8 +37,9 @@ if (isset($_POST["submit"])) {
 </head>
 <body>
     <h1>Ubah Data Mahasiswa</h1>
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data" >
         <input type="hidden" name="id" value=<?= $mhs["id"]; ?>>
+        <input type="hidden" name="gambarLama" value=<?= $mhs["gambar"]; ?>>
         <div style="margin-top:20px;">
             <label for="nrp">NRP : </label>
             <input type="text" name="nrp" id="nrp" value=<?= $mhs["nrp"]; ?>>
@@ -56,9 +57,11 @@ if (isset($_POST["submit"])) {
             <input type="text" name="jurusan" id="jurusan" value=<?= $mhs["jurusan"] ?> >
         </div>
         <div style="margin-top:20px;">
-            <label for="gambar">Gambar : </label>
-            <input type="text" name="gambar" id="gambar" value=<?= $mhs["gambar"]?> >
+            <label for="gambar">Gambar : </label> <br>
+            <img src="img/<?= $mhs['gambar']; ?>" alt="" width="100"> <br>
+            <input type="file" name="gambar" id="gambar"  > 
         </div>
+        <br>
         <button type="submit" name="submit" >Ubah Data</button>
     </form>
 </body>
