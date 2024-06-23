@@ -1,7 +1,7 @@
 <?php
 session_start();
 require 'functions.php';
-if ($_COOKIE['id'] && isset($_COOKIE['key'])) {
+if (isset($_COOKIE['id']) && isset($_COOKIE['key'])) {
     $id = $_COOKIE['id'];
     $key = $_COOKIE['key'];
 
