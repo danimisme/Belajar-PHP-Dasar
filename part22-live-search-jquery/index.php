@@ -24,6 +24,15 @@ if (isset($_POST["cari"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Admin</title>
 </head>
+<style>
+    .loader {
+        width : 100px;
+        position: absolute;
+        top: 120px;
+        z-index: -1;
+        display: none;
+    }
+</style>
 <body>
     <a href="logout.php">Logout</a>
     <h1>Daftar Mahasiswa</h1>
@@ -34,6 +43,7 @@ if (isset($_POST["cari"])){
     <form action="" method="POST">
         <input type="text" name="keyword" id="keyword" size="50" autofocus placeholder="Cari data ... " autocomplete="off">
         <button type="submit" name="cari"  id="tombol-cari" >Cari</button>
+        <img src="img/loader.gif" alt="" class="loader">
     </form>
     <br>
     <div id="container">
