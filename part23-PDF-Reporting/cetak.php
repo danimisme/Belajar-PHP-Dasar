@@ -34,6 +34,6 @@ $html .='</table>
 
 $mpdf = new \Mpdf\Mpdf();
 $mpdf->WriteHTML($html);
-$mpdf->Output();
+$mpdf->Output('daftar-mahasiswa.pdf',\Mpdf\Output\Destination::INLINE);
 
 ?>
