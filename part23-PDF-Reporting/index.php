@@ -39,9 +39,9 @@ if (isset($_POST["cari"])){
     }
 </style>
 <body>
-    <a href="logout.php" class="logout">Logout</a>
+    <a href="logout.php" class="logout">Logout</a> | <a targer="_blank" href="cetak.php">Cetak</a>
     <h1>Daftar Mahasiswa</h1>
-    <a href="tambah.php" class="tambah" >Tambah data mahasiswa</a>
+    <a href="tambah.php" class="tambah" >Tambah data mahasiswa</a> 
     <br>
     <br>
 
